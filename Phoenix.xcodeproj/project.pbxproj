@@ -27,9 +27,10 @@
 		8FA7519F2823883C00CAB99D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA7519E2823883C00CAB99D /* ProfileView.swift */; };
 		8FA751B92829128B00CAB99D /* NewsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA751B82829128A00CAB99D /* NewsList.swift */; };
 		8FA751C1282A1D6500CAB99D /* NewsListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA751C0282A1D6500CAB99D /* NewsListRepository.swift */; };
-		8FA751C6282A1DB300CAB99D /* NewsListApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA751C5282A1DB300CAB99D /* NewsListApiService.swift */; };
+		8FA751C6282A1DB300CAB99D /* NewsApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA751C5282A1DB300CAB99D /* NewsApiService.swift */; };
 		8FA751CB282A1E2300CAB99D /* NewsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA751CA282A1E2300CAB99D /* NewsListViewModel.swift */; };
 		8FA751D0282A24CC00CAB99D /* SearchNewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA751CF282A24CC00CAB99D /* SearchNewsView.swift */; };
+		8FB2E1C5286995CC00B2DDAE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB2E1C4286995CC00B2DDAE /* Constants.swift */; };
 		8FC5A4DF281255FC00DBC61B /* PhoenixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC5A4DE281255FC00DBC61B /* PhoenixApp.swift */; };
 		8FC5A4E1281255FC00DBC61B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC5A4E0281255FC00DBC61B /* ContentView.swift */; };
 		8FC5A4E3281255FF00DBC61B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FC5A4E2281255FF00DBC61B /* Assets.xcassets */; };
@@ -82,9 +83,10 @@
 		8FA7519E2823883C00CAB99D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		8FA751B82829128A00CAB99D /* NewsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsList.swift; sourceTree = "<group>"; };
 		8FA751C0282A1D6500CAB99D /* NewsListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListRepository.swift; sourceTree = "<group>"; };
-		8FA751C5282A1DB300CAB99D /* NewsListApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListApiService.swift; sourceTree = "<group>"; };
+		8FA751C5282A1DB300CAB99D /* NewsApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsApiService.swift; sourceTree = "<group>"; };
 		8FA751CA282A1E2300CAB99D /* NewsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewModel.swift; sourceTree = "<group>"; };
 		8FA751CF282A24CC00CAB99D /* SearchNewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNewsView.swift; sourceTree = "<group>"; };
+		8FB2E1C4286995CC00B2DDAE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8FC5A4DB281255FC00DBC61B /* Phoenix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phoenix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FC5A4DE281255FC00DBC61B /* PhoenixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoenixApp.swift; sourceTree = "<group>"; };
 		8FC5A4E0281255FC00DBC61B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -171,6 +173,14 @@
 			path = component;
 			sourceTree = "<group>";
 		};
+		8FB2E1C32869902400B2DDAE /* configuration */ = {
+			isa = PBXGroup;
+			children = (
+				8FB2E1C4286995CC00B2DDAE /* Constants.swift */,
+			);
+			path = configuration;
+			sourceTree = "<group>";
+		};
 		8FC5A4D2281255FC00DBC61B = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +204,7 @@
 		8FC5A4DD281255FC00DBC61B /* Phoenix */ = {
 			isa = PBXGroup;
 			children = (
+				8FB2E1C32869902400B2DDAE /* configuration */,
 				8F948A34283B1E18009524DD /* Fonts */,
 				8F9489D72834D255009524DD /* Utils */,
 				8FC5A52E2812936200DBC61B /* Services */,
@@ -284,7 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				8FC5A52F2812939100DBC61B /* UserApiService.swift */,
-				8FA751C5282A1DB300CAB99D /* NewsListApiService.swift */,
+				8FA751C5282A1DB300CAB99D /* NewsApiService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -441,7 +452,7 @@
 				8FA751CB282A1E2300CAB99D /* NewsListViewModel.swift in Sources */,
 				8F002B6F285062A80075D328 /* StockGroupCatagory.swift in Sources */,
 				8FA75191282387F100CAB99D /* PortfolioView.swift in Sources */,
-				8FA751C6282A1DB300CAB99D /* NewsListApiService.swift in Sources */,
+				8FA751C6282A1DB300CAB99D /* NewsApiService.swift in Sources */,
 				8FA751C1282A1D6500CAB99D /* NewsListRepository.swift in Sources */,
 				8F002B6D28504AD40075D328 /* Financial.swift in Sources */,
 				8F566451282DF01400384DE7 /* LineChartView.swift in Sources */,
@@ -449,6 +460,7 @@
 				8FC5A4EB281255FF00DBC61B /* Phoenix.xcdatamodeld in Sources */,
 				8F01875428573EB300C253C5 /* CoreDataMenager.swift in Sources */,
 				8FC5A527281285FA00DBC61B /* User.swift in Sources */,
+				8FB2E1C5286995CC00B2DDAE /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

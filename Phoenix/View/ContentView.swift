@@ -11,7 +11,7 @@ import CoreData
 struct ContentView: View {
 //    @Environment(\.managedObjectContext) private var viewContext
     @StateObject private var viewModel = UserProfileViewModel()
-    @State private var selectedTab = "2"
+    @State private var selectedTab = "1"
     
         
     var body: some View {
