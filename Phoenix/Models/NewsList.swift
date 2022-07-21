@@ -22,3 +22,9 @@ import Foundation
 //    var downTrend: Bool
 //    var percentage: Float
 //}
+
+struct fetchNewsResponse: Decodable {
+    var msg_code: String
+    var msg_detail: String
+    var response_data: [String]
+}

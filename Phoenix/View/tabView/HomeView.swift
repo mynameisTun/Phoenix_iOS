@@ -16,6 +16,8 @@ struct HomeView: View {
     @State private var notificationViewActive = false
 //    @Binding var searchNewsViewActive: Bool
     
+    @StateObject private var newsModel = NewsViewModel()
+    
     var body: some View {
         
         VStack(spacing: 0){
@@ -191,6 +193,9 @@ struct HomeView: View {
             maxWidth: .infinity,
             maxHeight: .infinity
         )
+        .onAppear{
+            newsModel.onAppear()
+        }
     }
 }
 
